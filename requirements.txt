@@ -14,3 +14,8 @@ flake8
 flask-celery
 Flask-Mail
 Flask-Limiter
+flask-redis
+
+flask-session-captcha
+flask_sessionstore
+
