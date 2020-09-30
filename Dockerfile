@@ -4,6 +4,6 @@ WORKDIR /worker
 COPY requirements.txt ./
 RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-COPY . .
+COPY . /root/
 
-CMD ["gunicorn", "start:app", "-c", "./gunicorn.conf.py"]
+CMD ["gunicorn", "start:app", "-c", "/root/gunicorn.conf.py" ] 
